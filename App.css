@@ -1,0 +1,230 @@
+:root {
+    --color-primario: #2c3e50;
+    --color-secundario: #34495e;
+    --color-accento: #3498db;
+    --color-texto: #2c3e50;
+    --color-fondo: #ecf0f1;
+    --color-blanco: #ffffff;
+    --color-gris-claro: #bdc3c7;
+    --color-gris: #95a5a6;
+    --color-error: #e74c3c;
+    --color-exito: #27ae60;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+}
+
+.aplicacion {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido-principal {
+    flex: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.barra-navegacion {
+    background-color: var(--color-blanco);
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.marca-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.logo-navbar {
+    color: var(--color-primario);
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.logo-navbar:hover {
+    color: var(--color-accento);
+}
+
+.seccion-usuario-navbar {
+    display: flex;
+    align-items: center;
+}
+
+.titulo-navbar {
+    color: var(--color-primario);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.botones-navbar {
+    display: flex;
+    gap: 1rem;
+}
+
+.contenedor-inicio,
+.contenedor-login,
+.contenedor-registro {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-blanco);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.seccion-bienvenida {
+    text-align: center;
+}
+
+.titulo-bienvenida {
+    color: var(--color-primario);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.botones-bienvenida {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.datos-usuario {
+    text-align: center;
+}
+
+.informacion-usuario {
+    margin-bottom: 2rem;
+}
+
+.nombre-usuario,
+.email-usuario,
+.edad-usuario {
+    color: var(--color-secundario);
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.acciones-usuario {
+    margin-top: 2rem;
+}
+
+.contenedor-formulario-login,
+.contenedor-formulario-registro {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.titulo-login,
+.titulo-registro {
+    color: var(--color-primario);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.formulario-login,
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.grupo-formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.etiqueta-formulario {
+    color: var(--color-primario);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.acciones-formulario {
+    margin-top: 1rem;
+}
+
+.boton-volver {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+input {
+    padding: 0.75rem;
+    border: 2px solid var(--color-gris-claro);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--color-accento);
+}
+
+button {
+    background-color: var(--color-accento);
+    color: var(--color-blanco);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: var(--color-secundario);
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.pie-pagina {
+    background-color: var(--color-primario);
+    color: var(--color-blanco);
+    padding: 1.5rem 2rem;
+    margin-top: auto;
+}
+
+.contenido-pie {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.seccion-pie {
+    text-align: center;
+}
+
+.texto-pie {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
